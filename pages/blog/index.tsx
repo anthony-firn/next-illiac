@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ReactNode } from 'react'
 import Layout from '../../components/layout'
 
 const importBlogPosts = async () => {
@@ -16,9 +17,27 @@ const importBlogPosts = async () => {
   )
 }
 
-const Blog = ({ postsList }) => (
+type BlogProps = {
+  postsList: {
+    map: Maper;
+  };
+};
+
+interface Maper {
+  (post: any) : Element;
+}
+
+type Poster = {
+  slug: string;
+  attributes: {
+    title: string;
+    thumbnail: string;
+  };
+};
+
+const Blog = ({ postsList }: BlogProps) => (
   <Layout>
-    {postsList.map((post) => (
+    {postsList.map((post: Poster) => (
       <div key={post.slug} className="post">
         <Link href="/blog/post/[slug]" as={`/blog/post/${post.slug}`}>
           <a>
