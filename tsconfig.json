@@ -24,7 +24,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "pages/_app.js", "lib/theme.js"  ],
   "exclude": [
     "node_modules"
   ]
