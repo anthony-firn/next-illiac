@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import theme from '../lib/theme'
 
-const makeTitle = (title: string, name: string) =>
+// const makeTitle = (title: string, name: string) =>
+const makeTitle = (title, name) =>
   title === name ? title : `${title} – ${name}`
 
 const Meta = ({
@@ -11,7 +12,8 @@ const Meta = ({
   image = '', // social card image URL
   url = 'https://next-theme-starter.vercel.app',
   children,
-}: { children: any, url: string, image: string, description: string, name: string, title: string }) => (
+// }: { children: any, url: string, image: string, description: string, name: string, title: string }) => (
+}) => (
   <Head>
     <meta key="og_locale" property="og:locale" content="en_US" />
     <meta key="og_type" property="og:type" content="website" />
