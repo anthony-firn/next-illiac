@@ -1,3 +1,6 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 import * as React from "react"
 import Divider from "../elements/divider"
 import Inner from "../elements/inner"
@@ -36,7 +39,8 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <Svg icon="hexa" width={12} color="icon_darkest" left="20%" top="30%" />
       <Svg icon="hexa" width={8} stroke color="icon_darkest" left="80%" top="70%" />
     </Divider>
-    <Content speed={0.4} offset={offset} factor={factor}>
+    {/* <Content speed={0.4} offset={offset} factor={factor}> */}
+    <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
       <Inner>
         {/* <AboutMDX /> */}
         <div dangerouslySetInnerHTML={{ __html: html }} />
