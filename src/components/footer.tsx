@@ -32,9 +32,9 @@ const Footer = () => {
         }}
       >
         {isDark ? (
-          <img src="https://raw.githubusercontent.com/anthony4tner/illi.ac-logo/main/vector/logo-slogan-icon-left/default.svg" alt="illiac Logo" />
+          <img width="300px" src="https://raw.githubusercontent.com/anthony4tner/illi.ac-logo/main/vector/logo-slogan-icon-left/default-white.svg" alt="illiac Logo" />
         ) : (
-          <img src="https://raw.githubusercontent.com/anthony4tner/illi.ac-logo/main/vector/logo-slogan-icon-left/default-black.svg" alt="illiac Logo" />
+          <img width="300px" src="https://raw.githubusercontent.com/anthony4tner/illi.ac-logo/main/vector/logo-slogan-icon-left/default-black.svg" alt="illiac Logo" />
         )}
         {/* {` `}
         <Link

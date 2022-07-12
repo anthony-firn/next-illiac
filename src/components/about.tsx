@@ -40,7 +40,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <Svg icon="hexa" width={8} stroke color="icon_darkest" left="80%" top="70%" />
     </Divider>
     {/* <Content speed={0.4} offset={offset} factor={factor}> */}
-    <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
+    <Content sx={{ variant: `texts.medium` }} speed={0.4} offset={offset} factor={factor}>
       <Inner>
         {/* <AboutMDX /> */}
         <div dangerouslySetInnerHTML={{ __html: html }} />

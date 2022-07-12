@@ -36,7 +36,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
         </div>
       </div>
     </Divider>
-    <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
+    <Content sx={{ variant: `texts.medium` }} speed={0.4} offset={offset} factor={factor}>
       <Inner>
         {/* <ContactMDX /> */}
         <div dangerouslySetInnerHTML={{ __html: html }} />
