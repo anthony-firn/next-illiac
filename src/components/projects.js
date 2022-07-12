@@ -11,7 +11,8 @@ import { UpDown, UpDownWide } from "../styles/animations"
 // import ProjectsMDX from "../sections/projects"
 // import { attributes, html } from '../../content/about.md'
 
-const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
+// const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
+  const Projects = ({ offset, factor = 2 }) => (
   <div>
     <Divider
       bg="linear-gradient(to right, var(--theme-ui-colors-background) 0%, var(--theme-ui-colors-primary) 100%)"
