@@ -9,6 +9,7 @@ import { UpDown, UpDownWide, waveAnimation } from "../styles/animations"
 import Footer from "./footer"
 // @ts-ignore
 // import ContactMDX from "../sections/contact"
+import { attributes, html } from '../../content/contact.md'
 
 const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
@@ -38,6 +39,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
         {/* <ContactMDX /> */}
+        <footer dangerouslySetInnerHTML={{ __html: html }} />
       </Inner>
       <Footer />
     </Content>
