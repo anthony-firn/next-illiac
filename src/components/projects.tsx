@@ -14,7 +14,7 @@ import { UpDown, UpDownWide } from "../styles/animations"
 const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="linear-gradient(to right, #81B989 0%, #EAED3E 100%)"
+      bg="linear-gradient(to right, var(--theme-ui-colors-background) 0%, var(--theme-ui-colors-primary) 100%)"
     //   bg="linear-gradient(to right, #6a5acd 0%, #00bfff 100%)"
       sx={{ clipPath: `polygon(0 15%, 100% 25%, 100% 85%, 0 75%)` }}
       speed={-0.2}
