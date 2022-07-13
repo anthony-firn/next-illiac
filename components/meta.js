@@ -10,7 +10,7 @@ const Meta = ({
   name = 'Theme Starter', // site name
   description = 'This website was bootstrapped with @lachlanjc’s Next.js Theme Starter.', // page description
   image = '', // social card image URL
-  url = 'https://next-theme-starter.vercel.app',
+  url = 'https://next-illiac.vercel.app/',
   children,
 // }: { children: any, url: string, image: string, description: string, name: string, title: string }) => (
 }) => (
